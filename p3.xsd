@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<xs:element name="ShippingOrder">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order-id" type="xs:byte"></xs:element>
+<xs:element name="description" type="xs:string"></xs:element>
+<xs:element name="request-date" type="xs:date"></xs:element>
+<xs:element name="book">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="book-id" type="xs:byte"></xs:element>
+<xs:element name="book-name" type="xs:string"></xs:element>
+<xs:element name="genre" maxOccurs="unbounded">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:enumeration value="Science-Fiction"></xs:enumeration>
+<xs:enumeration value="Mystery"></xs:enumeration>
+<xs:enumeration value="Thriller"></xs:enumeration>
+<xs:enumeration value="Drama"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element name="publish-date" type="xs:date"></xs:element>
+<xs:element name="authors" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="bio" type="xs:string"></xs:element>
+<xs:element name="last-name" type="xs:string"></xs:element>
+<xs:element name="first-name" type="xs:string"></xs:element>
+<xs:element name="pen-name" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="quantity" type="xs:byte"></xs:element>
+<xs:element name="price">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minExclusive value="0"></xs:minExclusive>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ShippingOrder>
+<order>
+<order-id>1</order-id>
+<description>Details of order id 1</description>
+<request-date>2021-06-07</request-date>
+<book>
+<book-id>10</book-id>
+<book-name>Digital Fortress</book-name>
+<genre>Science-Fiction</genre>
+<publish-date>1998-09-01</publish-date>
+<authors>
+<bio>Daniel Gerhard Brown is an American author best known for his thriller novels, 
+including the Robert Langdon novels Angels and Demons, The Da Vinci Code, The Lost 
+Symbol, Inferno and Origin.</bio>
+<last-name>Brown</last-name>
+<first-name>Dan</first-name>
+</authors>
+</book>
+<quantity>1</quantity>
+<price>200</price>
+</order>
+<order>
+<order-id>2</order-id>
+<description>Details of order id 2</description>
+<request-date>2021-06-08</request-date>
+<book>
+<book-id>11</book-id>
+<book-name>The Maze Runner</book-name>
+<genre>Science-Fiction</genre>
+<publish-date>2009-10-06</publish-date>
+<authors>
+<bio>Author of Maze Runner, Eye of Minds, Infinity Ring, and The 13th Reality 
+series.</bio>
+<last-name>Dashner</last-name>
+<first-name>James</first-name>
+</authors>
+</book>
+<quantity>1</quantity>
+<price>269</price>
+</order>
+<order>
+<order-id>3</order-id>
+<description>Details of order id 3</description>
+<request-date>2021-06-08</request-date>
+<book>
+<book-id>12</book-id>
+<book-name>The Mist</book-name>
+<genre>Thriller</genre>
+<genre>Mystery</genre>
+<publish-date>1980-10-06</publish-date>
+<authors>
+<bio>Stephen Edwin King (born September 21, 1947) is an American author of horror, 
+supernatural fiction, suspense, crime, science-fiction, and fantasy novels.</bio>
+<last-name>King</last-name>
+<first-name>Stephen</first-name>
+</authors>
+</book>
+<quantity>1</quantity>
+<price>780</price>
+</order>
+</ShippingOrder>
